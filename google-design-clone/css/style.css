@@ -48,9 +48,8 @@ section .main .img{
 
 section .main .serch-box {
     display: block;
-    width: 150px;
     border-radius: 10px;
     
-   
 }
+
 
