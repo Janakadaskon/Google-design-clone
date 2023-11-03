@@ -6,4 +6,8 @@ This was done for Educational purposes only!!!
 
 ## Preview
 [Google Search Engine clone Preview]
+
+## Features
+- **Accurate Search Interface:** Experiance a faithful recreation of the Google Search interface.
+- **Simple and intutve:** Easy-to-use, Just like the real seach engine.
  
