@@ -108,7 +108,25 @@ section .main .search-box .icons {
     margin-right: 24px;
     display: flex;
     justify-content: space-between;
-    top: 15px;
+    top: 12px;
+}
+
+section .main .search-box:hover {
+    box-shadow: 5px 5px 5px rgba(8, 7, 7, 0.1);
+}
+
+section .main .buttons button {
+    width: 150px;
+    margin: 0 5px;
+    padding: 8px 10px;
+    color: #3a3a3a;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #f3f0f0;
 }
 
 
