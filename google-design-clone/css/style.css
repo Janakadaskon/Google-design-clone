@@ -28,6 +28,20 @@
 
 }
 
+#nav-bar ul button{
+    border-radius: 5px;
+    background-color: #296ce0;
+    padding: 10px 22px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+
 section .main{
     position: relative;
     display: flex;
@@ -41,8 +55,8 @@ section .main{
 
 section .main img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 500px;
+    margin-right: 500px;
     width: 300px;
     /* margin-top: calc(25vh); */
 
@@ -58,12 +72,13 @@ section .main form {
 
 
 section .main .search-box {
+    position: relative;
     width: 550px;
     height: 44px;
     margin-top: 20px;
     border-radius: 30rem #ccc;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 section .main .search-box input {
@@ -73,9 +88,27 @@ section .main .search-box input {
     padding-left: 45px;
     padding-right: 60px;
     border-radius: 30rem;
-    border: 1px solid #fcf9f9;
+    border: 1px solid #2d2a2a;
     outline: none;
     font-size: 16px;
+}
+
+#search-icon{
+    width: 20px;
+}
+
+#img-search{
+    width: 25px;
+}
+
+section .main .search-box .icons {
+    position: absolute;
+    width: 94%;
+    margin-left: 15px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    top: 15px;
 }
 
 
