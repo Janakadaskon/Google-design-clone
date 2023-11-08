@@ -103,13 +103,7 @@ section .main .search-box input {
     font-size: 16px;
 }
 
-#search-icon{
-    width: 20px;
-}
 
-#img-search{
-    width: 25px;
-}
 
 section .main .search-box .icons {
     position: absolute;
@@ -117,7 +111,7 @@ section .main .search-box .icons {
     margin-left: 15px;
     margin-right: 24px;
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     justify-content: space-between;
     top: 12px;
 }
@@ -126,6 +120,22 @@ section .main .search-box:hover {
     box-shadow: 5px 5px 5px rgba(8, 7, 7, 0.1);
     border: 1px solid rgb(231, 226, 226);
     border-radius: 30rem;
+}
+section .main .search-box .search-icon{
+    display: flex;
+    justify-content: flex-start;
+    width: 20px;
+}
+
+section .main .search-box .img-search{
+    display: flex;
+    justify-content: flex-end;
+    width: 25px;
+}
+section .main .search-box .mic{
+    display: flex;
+    justify-content: flex-end;
+    width: 25px;
 }
 
 section .main .buttons button {
