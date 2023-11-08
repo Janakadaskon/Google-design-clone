@@ -47,13 +47,13 @@ section .main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: calc(25vh);
+    margin-top: 200px;
     margin-left: 450px;
     margin-right: 450px;
 }
     
 
-section .main img{
+section .main .logo-google{
    opacity: 0;
    animation: google 5s ease-in-out forwards;
    animation-iteration-count: infinite;
@@ -77,6 +77,8 @@ section .main form {
     align-items: center;
     gap: 20px;
 }
+
+
 
 
 section .main .search-box {
