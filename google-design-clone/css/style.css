@@ -83,16 +83,22 @@ section .main form {
 
 section .main .search-box {
     position: relative;
+    /* display: flex; */
+    align-items: center;
     width: 550px;
     height: 44px;
     margin-top: 20px;
     border-radius: 30rem #ccc;
     margin-left: 500px;
     margin-right: 500px;
+    z-index: 1;
+    
 }
 
 section .main .search-box input {
     width: 100%;
+    display: flex;
+    align-items: center;
     height: 100%;
     padding: 14px;
     padding-left: 45px;
@@ -101,26 +107,28 @@ section .main .search-box input {
     border: 1px solid #2d2a2a;
     outline: none;
     font-size: 16px;
+    z-index: 10;
 }
 
 
 
 section .main .search-box .icons {
-    position: absolute;
+    position: relative;
     width: 94%;
     margin-left: 15px;
     margin-right: 24px;
     display: flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
     justify-content: space-between;
-    top: 12px;
+    top: -35px;
+    
 }
 
-section .main .search-box:hover {
+/* section .main .search-box:hover {
     box-shadow: 5px 5px 5px rgba(8, 7, 7, 0.1);
     border: 1px solid rgb(231, 226, 226);
     border-radius: 30rem;
-}
+} */
 section .main .search-box .search-icon{
     display: flex;
     justify-content: flex-start;
@@ -150,7 +158,7 @@ section .main .buttons button {
     border: 1px solid transparent;
     outline: none;
     background-color:#296ce0;
-    margin-top:20px;
+    margin-top:0;
     align-items: center;
     
 }
@@ -165,7 +173,6 @@ section .languages {
     position: relative;
     display: flex;
     justify-content: center;
-    
     margin-top: 75px;
 }
 
@@ -173,6 +180,7 @@ section .languages li{
     list-style: none;
     margin: 0;
     font-size: 13px;
+    margin-right: 20px;
 
 }
 
@@ -184,85 +192,69 @@ section .languages li .lang{
     color: blue;
 }
 
-section .footer {
+section .footer  {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100vw);
     background: #f2f2f2;
-    height: 100px;
-}
-section .footer row{
-    padding: 15px 0;
-    border-top: 1px solid wheat;
-    justify-content: space-between;
-}
-
-section .footer .row.row2{
-    display: flex;
-    justify-content: space-between;
-    padding: 1px;
-    padding-top: 3px;
     
 }
-section .footer .row.row2 ul {
+
+section .footer .row1 {
     display: flex;
-    padding-bottom: 15px;
-    padding-bottom: 15px;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid rgb(231, 226, 226);
+}
+
+section .footer .row1 .country {
+    margin-left: 20px;
+}
+
+section .footer .row2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+section .footer .row2 .list-1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+section .footer .row2 .list-1 ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+section .footer .row2 .list-1 ul li{
     margin-right: 20px;
-    margin-left: 30px;
 }
 
-section .footer .row.row2 ul li:hover{
-    text-decoration: underline;
-}
-
-section .footer .row.row2 ul li{
-    list-style: none;
-}
-
-section .footer .row.row2 ul li a{
-    text-decoration: none;
-    font-size: 14px;
-    margin-right: 25px;
-    color: #5f6368;
-
-}
-
-section .footer .row.row2 ul:nth-child(2){
-    margin-left: 80%;
-}
-
-section .footer .row.row2 ul:nth-child(2) li a{
-    position: relative;
+section .footer .row2 .list-2{
     display: flex;
     justify-content: flex-end;
-    text-decoration: none;
-    font-size: 14px;
-    margin-right: 0px;
-    margin-left: 25px;
-    color: #5f6368;
+}
+section .footer .row2 .list-2 ul{
+    display: flex;
+    justify-content: flex-end;
 }
 
-section .notice li {
+section .footer .row2 .list-2 ul li{
+    margin-right: 20px;
+}
 
+section .notice {
     color: red;
     font-size: 25px;
-    margin-top: calc(40vh);
-    margin-left: calc(30vw);
-
-
+    margin-left: 20px;
 }
 
-section .footer .row.row2 .country {
-    position: absolute;
-    width: 100%;
-    color: #5f6368;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgb(212, 207, 207);
-    padding-left: 30px;
-    padding-top: 8px;
-}
 
 
 
